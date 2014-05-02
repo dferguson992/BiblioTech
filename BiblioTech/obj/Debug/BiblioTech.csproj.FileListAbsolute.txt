@@ -1,0 +1,5 @@
+D:\Profiles\QVCX76\My Documents\Visual Studio 2008\Projects\BiblioTech\BiblioTech\obj\Debug\ResolveAssemblyReference.cache
+D:\Profiles\QVCX76\My Documents\Visual Studio 2008\Projects\BiblioTech\BiblioTech\bin\Debug\BiblioTech.dll
+D:\Profiles\QVCX76\My Documents\Visual Studio 2008\Projects\BiblioTech\BiblioTech\bin\Debug\BiblioTech.pdb
+D:\Profiles\QVCX76\My Documents\Visual Studio 2008\Projects\BiblioTech\BiblioTech\obj\Debug\BiblioTech.dll
+D:\Profiles\QVCX76\My Documents\Visual Studio 2008\Projects\BiblioTech\BiblioTech\obj\Debug\BiblioTech.pdb
