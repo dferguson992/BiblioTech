@@ -2,13 +2,13 @@
 
 namespace BiblioTech
 {
-    public interface XMLItem
+    public interface IXMLItem
     {
         bool Save(XmlDocument doc);
         bool Open(string xmlPath);
     }
 
-    public interface IMediaElement : XMLItem
+    public interface IMediaElement : IXMLItem
     {
         string Title { get; }
         string Author { get; }

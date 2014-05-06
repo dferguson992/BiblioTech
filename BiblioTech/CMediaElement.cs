@@ -85,7 +85,7 @@ namespace BiblioTech
 
         #endregion
 
-        #region XMLItem Members
+        #region IXMLItem Members
 
         public bool Save(System.Xml.XmlDocument doc)
         {
