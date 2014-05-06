@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BiblioTech
 {
-    public class CFileMedia : CMediaElement, IFileMediaElement
+    public class CFileMedia : CMediaController, IFileMediaElement
     {
         private MediaLocation location;
         private FILE_METADATA meta;

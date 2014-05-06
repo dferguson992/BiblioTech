@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BiblioTech
 {
-    public class CPrintMedia : CMediaElement, IPrintMediaElement
+    public class CPrintMedia : CMediaController, IPrintMediaElement
     {
         private MediaLocation location;
         private BOOK_METADATA meta;

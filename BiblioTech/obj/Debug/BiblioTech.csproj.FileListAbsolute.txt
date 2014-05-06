@@ -7,3 +7,8 @@ C:\Users\Dan\Documents\GitHub\BiblioTech\BiblioTech\bin\Debug\BiblioTech.dll
 C:\Users\Dan\Documents\GitHub\BiblioTech\BiblioTech\bin\Debug\BiblioTech.pdb
 C:\Users\Dan\Documents\GitHub\BiblioTech\BiblioTech\obj\Debug\BiblioTech.dll
 C:\Users\Dan\Documents\GitHub\BiblioTech\BiblioTech\obj\Debug\BiblioTech.pdb
+C:\Users\dferguson\Documents\GitHub\BiblioTech\BiblioTech\bin\Debug\BiblioTech.dll
+C:\Users\dferguson\Documents\GitHub\BiblioTech\BiblioTech\bin\Debug\BiblioTech.pdb
+C:\Users\dferguson\Documents\GitHub\BiblioTech\BiblioTech\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\dferguson\Documents\GitHub\BiblioTech\BiblioTech\obj\Debug\BiblioTech.dll
+C:\Users\dferguson\Documents\GitHub\BiblioTech\BiblioTech\obj\Debug\BiblioTech.pdb

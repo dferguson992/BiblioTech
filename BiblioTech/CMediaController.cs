@@ -34,7 +34,7 @@ namespace BiblioTech
         #endregion
     }
 
-    public abstract class CMediaElement : IMediaElement
+    public abstract class CMediaController : IMediaElement
     {
         private string title = string.Empty;
         private string author = string.Empty;
@@ -42,7 +42,7 @@ namespace BiblioTech
         private MediaType media;
         private AccessType access;
         
-        public CMediaElement(string title, string author, MediaType media, AccessType access)
+        public CMediaController(string title, string author, MediaType media, AccessType access)
         {
             this.title = title;
             this.author = author;

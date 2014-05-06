@@ -71,7 +71,7 @@
     <Compile Include="BiblioTechController.cs" />
     <Compile Include="BiblioTechExceptions.cs" />
     <Compile Include="CFileMedia.cs" />
-    <Compile Include="CMediaElement.cs" />
+    <Compile Include="CMediaController.cs" />
     <Compile Include="CPrintMedia.cs" />
     <Compile Include="CWebMedia.cs" />
     <Compile Include="Structures_MetaData.cs" />
