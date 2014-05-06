@@ -1,0 +1,5 @@
+C:\Users\dferguson\Documents\GitHub\BiblioTech\BiblioTech\bin\Release\BiblioTech.dll
+C:\Users\dferguson\Documents\GitHub\BiblioTech\BiblioTech\bin\Release\BiblioTech.pdb
+C:\Users\dferguson\Documents\GitHub\BiblioTech\BiblioTech\obj\Release\ResolveAssemblyReference.cache
+C:\Users\dferguson\Documents\GitHub\BiblioTech\BiblioTech\obj\Release\BiblioTech.dll
+C:\Users\dferguson\Documents\GitHub\BiblioTech\BiblioTech\obj\Release\BiblioTech.pdb

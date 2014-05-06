@@ -17,8 +17,8 @@ namespace BiblioTech
         AccessType Access { get; }
 
         XmlDocument ToXML();
-
     }
+
     public interface IMediaTags
     {
         string this[object index] { get; set; }

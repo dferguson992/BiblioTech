@@ -10,7 +10,7 @@
   <Class Name="BiblioTech.BiblioTechController" Collapsed="true">
     <Position X="9.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>BiblioTechController.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -33,15 +33,15 @@
     <Position X="9.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
-      <FileName>CMediaElement.cs</FileName>
+      <FileName>CMediaController.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="BiblioTech.CMediaElement" Collapsed="true">
+  <Class Name="BiblioTech.CMediaController" Collapsed="true">
     <Position X="2.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAQAAAIEAAgAAAAIAAAAAAAEAAAABABAAAAAQ=</HashCode>
-      <FileName>CMediaElement.cs</FileName>
+      <FileName>CMediaController.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -82,15 +82,15 @@
       <FileName>Structures_MetaData.cs</FileName>
     </TypeIdentifier>
   </Struct>
-  <Interface Name="BiblioTech.IXMLItem" Collapsed="true">
-    <Position X="2.75" Y="0.5" Width="1.5" />
+  <Interface Name="BiblioTech.IXMLItem">
+    <Position X="2" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="BiblioTech.IMediaElement" Collapsed="true">
-    <Position X="2.75" Y="1.75" Width="1.5" />
+  <Interface Name="BiblioTech.IMediaElement">
+    <Position X="4.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAEAAgAAAAAAAAAAAAEAAAAAAAAAAAAQ=</HashCode>
       <FileName>Interfaces.cs</FileName>
