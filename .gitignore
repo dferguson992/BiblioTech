@@ -1,0 +1,17 @@
+UpgradeLog.XML
+_UpgradeReport_Files/UpgradeReport.css
+_UpgradeReport_Files/UpgradeReport.xslt
+_UpgradeReport_Files/UpgradeReport_Plus.gif
+_UpgradeReport_Files/UpgradeReport_Minus.gif
+Backup/BiblioTech/Structures_MetaData.cs
+Backup/BiblioTech/Properties/AssemblyInfo.cs
+Backup/BiblioTech/Interfaces.cs
+Backup/BiblioTech/Enumerations.cs
+Backup/BiblioTech/CWebMedia.cs
+Backup/BiblioTech/CPrintMedia.cs
+Backup/BiblioTech/CMediaElement.cs
+Backup/BiblioTech/CFileMedia.cs
+Backup/BiblioTech.sln
+Backup/BiblioTech/BiblioTech.csproj
+Backup/BiblioTech/BiblioTechController.cs
+Backup/BiblioTech/BiblioTechExceptions.cs
