@@ -3,19 +3,39 @@
   <Class Name="BiblioTech.BiblioStrings" Collapsed="true">
     <Position X="7.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>BiblioStrings.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BiblioTech.BiblioTechController" Collapsed="true">
     <Position X="9.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAABQAAAAAAIAAAAAAAAAAQAAAAAAAAAAAQAAAAAAA=</HashCode>
       <FileName>BiblioTechController.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BiblioTech.BiblioTechExceptions" Collapsed="true">
     <Position X="7.5" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="BiblioTech.BiblioTechExceptions.BiblioTechUserAlertException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BiblioTechExceptions.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="BiblioTech.BiblioTechExceptions.BiblioTechSystemAlertException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BiblioTechExceptions.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="BiblioTech.BiblioTechExceptions.XMLWriteException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BiblioTechExceptions.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>BiblioTechExceptions.cs</FileName>

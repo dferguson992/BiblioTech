@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml;
 
 namespace BiblioTech
 {
@@ -20,18 +21,37 @@ namespace BiblioTech
         public BiblioTechController(string librarySourceFilePath)
         {
             _libraryFilePath = librarySourceFilePath;
-            _library = BuildLibFromXML(_libraryFilePath);
+            _library = OpenXMLLib(_libraryFilePath);
         }
 
         private bool SaveXMLLib()
         {
-            foreach (var item in _library)
+            XmlDocument doc;
+            List<IXMLItem> FailedItems = new List<IXMLItem>();
+            try
             {
-                (item as IXMLItem).Save();
+                foreach (var item in _library)
+                {
+                    doc = new XmlDocument();
+                    if ((item as IXMLItem).Save(doc))
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        throw new BiblioTechExceptions.XMLWriteException(BiblioStrings.ExcXmlWriteFail);
+                    }
+                }
+                return true;
+            }
+            catch (BiblioTechExceptions.XMLWriteException exc)
+            {
+                //log this exception?
+                return false;
             }
         }
 
-        private List<IMediaElement> BuildLibFromXML(string XMLLocation)
+        private List<IMediaElement> OpenXMLLib(string XMLLocation)
         {
 
             return null;
