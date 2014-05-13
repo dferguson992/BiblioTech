@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml;
 
 namespace BiblioTech
 {
@@ -15,6 +16,19 @@ namespace BiblioTech
         {
             this.location = location;
             this.meta = new BOOK_METADATA(this, publisher, genre, rating, year, completed);
+        }
+
+        public override bool Save(ref System.Xml.XmlDocument doc)
+        {
+            base.Save(ref doc);
+
+            XmlNode locationNode = doc.CreateNode(XmlNodeType.Text, "location", "");
+            XmlNode metaNode = doc.CreateNode(XmlNodeType.Text, "metaData", "");
+            MetaData.Save(ref doc);
+
+
+            return true;
+
         }
 
         #region IPrintMediaElement Members

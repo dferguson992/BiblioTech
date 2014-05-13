@@ -4,7 +4,7 @@ using System.Xml;
 
 namespace BiblioTech
 {
-    public struct BOOK_METADATA
+    public struct BOOK_METADATA : IXMLItem
     {
         private IMediaElement host;
         private string publisher;
@@ -87,6 +87,21 @@ namespace BiblioTech
                 System.Console.WriteLine(exc.Message);
                 return false;
             }
+        }
+
+        public bool Save(ref XmlDocument doc)
+        {
+            XmlDocument metaDoc = ToXML();
+            foreach (var item in metaDoc.ChildNodes)
+            {
+                doc.AppendChild(item as XmlNode);
+            }
+            return true;
+        }
+
+        public bool Open(string xmlPath)
+        {
+            throw new System.NotImplementedException();
         }
     }
 

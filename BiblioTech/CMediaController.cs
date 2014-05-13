@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml;
+using System.IO;
 
 namespace BiblioTech
 {
     public class CTagReaderWriter : IMediaTags
     {
         private Dictionary<object, string> tags;
+
         public CTagReaderWriter()
         {
             tags = new Dictionary<object, string>();
@@ -29,6 +32,11 @@ namespace BiblioTech
             {
                 tags[index] = value;
             }
+        }
+
+        public int Count
+        {
+            get { return tags.Count; }
         }
 
         #endregion
@@ -87,12 +95,28 @@ namespace BiblioTech
 
         #region IXMLItem Members
 
-        public bool Save(System.Xml.XmlDocument doc)
+        public virtual bool Save(ref XmlDocument doc)
         {
-            throw new NotImplementedException();
+            XmlNode titleNode = doc.CreateNode(XmlNodeType.Text, "title", "");
+            XmlNode authorNode = doc.CreateNode(XmlNodeType.Text, "author", "");
+            XmlNode tagsNode = doc.CreateNode(XmlNodeType.Text, "tags", "");
+            for (int i = 0; i < (tags as IMediaTags).Count; i++)
+            {
+                tagsNode.AppendChild(doc.CreateNode(XmlNodeType.Text, "tag", ""));
+            }
+            XmlNode mediaNode = doc.CreateNode(XmlNodeType.Text, "media", "");
+            XmlNode accessNode = doc.CreateNode(XmlNodeType.Text, "access", "");
+
+            doc.AppendChild(titleNode);
+            doc.AppendChild(authorNode);
+            doc.AppendChild(tagsNode);
+            doc.AppendChild(mediaNode);
+            doc.AppendChild(accessNode);
+
+            return true;
         }
 
-        public bool Open(string xmlPath)
+        public virtual bool Open(string xmlPath)
         {
             throw new NotImplementedException();
         }

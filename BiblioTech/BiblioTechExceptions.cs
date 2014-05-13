@@ -24,7 +24,7 @@ namespace BiblioTech
         public class BiblioTechSystemAlertException : Exception
         {
             public BiblioTechSystemAlertException() { }
-            public BiblioTechSystemAlertException(string message) : base(message) { }
+            public BiblioTechSystemAlertException(string message) : base(message) { return; }
             public BiblioTechSystemAlertException(string message, Exception inner) : base(message, inner) { }
             protected BiblioTechSystemAlertException(
               System.Runtime.Serialization.SerializationInfo info,
@@ -36,7 +36,7 @@ namespace BiblioTech
         public class XMLWriteException : BiblioTechUserAlertException
         {
             public XMLWriteException() { }
-            public XMLWriteException(string message) : base(message) { }
+            public XMLWriteException(string message) : base(message) { return; }
             public XMLWriteException(string message, Exception inner) : base(message, inner) { }
             protected XMLWriteException(
               System.Runtime.Serialization.SerializationInfo info,

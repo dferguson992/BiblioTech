@@ -33,12 +33,13 @@ namespace BiblioTech
                 foreach (var item in _library)
                 {
                     doc = new XmlDocument();
-                    if ((item as IXMLItem).Save(doc))
+                    if ((item as IXMLItem).Save(ref doc))
                     {
                         continue;
                     }
                     else
                     {
+                        FailedItems.Add(item);
                         throw new BiblioTechExceptions.XMLWriteException(BiblioStrings.ExcXmlWriteFail);
                     }
                 }

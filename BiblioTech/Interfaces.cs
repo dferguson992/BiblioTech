@@ -4,7 +4,7 @@ namespace BiblioTech
 {
     public interface IXMLItem
     {
-        bool Save(XmlDocument doc);
+        bool Save(ref XmlDocument doc);
         bool Open(string xmlPath);
     }
 
@@ -22,6 +22,7 @@ namespace BiblioTech
     public interface IMediaTags
     {
         string this[object index] { get; set; }
+        int Count { get; }
     }
 
     public interface IPrintMediaElement : IMediaElement
