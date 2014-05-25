@@ -27,8 +27,9 @@ namespace BiblioTech
         public int Year { get { return this.year; } }
         public bool Completed { get { return this.completed; } set { completed = value; } }
 
-        public static class XmlKeys
+        private static class XmlKeys
         {
+            public static string XML_BookMetaData { get { return "bookmetadata"; } }
             public static string XML_Publisher { get { return "publisher"; } }
             public static string XML_Genre { get { return "genre"; } }
             public static string XML_Rating { get { return "rating"; } }
@@ -50,7 +51,6 @@ namespace BiblioTech
         public XmlDocument ToXML()
         {
             XmlDocument document = new XmlDocument();
-            document.LoadXml("<root>");
 
             XmlElement PublisherElement = document.CreateElement(XmlKeys.XML_Publisher);
             XmlElement GenreElement = document.CreateElement(XmlKeys.XML_Genre);
@@ -73,29 +73,15 @@ namespace BiblioTech
             return document;
         }
 
-        public bool SaveMetaData()
-        {
-            try
-            {
-                XmlTextWriter writer = new XmlTextWriter(host.Title + "_MetaData.xml", null);
-                writer.Formatting = Formatting.Indented;
-                ToXML().Save(writer);
-                return true;
-            }
-            catch (System.Exception exc)
-            {
-                System.Console.WriteLine(exc.Message);
-                return false;
-            }
-        }
-
         public bool Save(ref XmlDocument doc)
         {
+            XmlNode metaDataNode = doc.CreateNode(XmlKeys.XML_BookMetaData, "metadata", "");
             XmlDocument metaDoc = ToXML();
             foreach (var item in metaDoc.ChildNodes)
             {
-                doc.AppendChild(item as XmlNode);
+                metaDataNode.AppendChild(item as XmlNode);
             }
+            doc.AppendChild(metaDataNode);
             return true;
         }
 
@@ -105,7 +91,7 @@ namespace BiblioTech
         }
     }
 
-    public struct FILE_METADATA
+    public struct FILE_METADATA : IXMLItem
     {
         private IMediaElement host;
         private string filePath;
@@ -139,6 +125,7 @@ namespace BiblioTech
 
         public static class XmlKeys
         {
+            public static string XML_FileMetaData { get { return "filemetadata"; } }
             public static string XML_FilePath { get { return "filePath"; } }
             public static string XML_FileName { get { return "fileName"; } }
             public static string XML_FileExt { get { return "fileExt"; } }
@@ -166,7 +153,6 @@ namespace BiblioTech
         public XmlDocument ToXML()
         {
             XmlDocument document = new XmlDocument();
-            document.LoadXml("<root>");
 
             XmlElement FilePathElement = document.CreateElement(XmlKeys.XML_FilePath);
             XmlElement FileNameElement = document.CreateElement(XmlKeys.XML_FileName);
@@ -198,24 +184,25 @@ namespace BiblioTech
             return document;
         }
 
-        public bool SaveMetaData()
+        public bool Save(ref XmlDocument doc)
         {
-            try
+            XmlNode metaDataNode = doc.CreateNode(XmlKeys.XML_FileMetaData, "metadata", "");
+            XmlDocument metaDoc = ToXML();
+            foreach (var item in metaDoc.ChildNodes)
             {
-                XmlTextWriter writer = new XmlTextWriter(host.Title + "_MetaData.xml", null);
-                writer.Formatting = Formatting.Indented;
-                ToXML().Save(writer);
-                return true;
+                metaDataNode.AppendChild(item as XmlNode);
             }
-            catch (System.Exception exc)
-            {
-                System.Console.WriteLine(exc.Message);
-                return false;
-            }
+            doc.AppendChild(metaDataNode);
+            return true;
+        }
+
+        public bool Open(string xmlPath)
+        {
+            throw new System.NotImplementedException();
         }
     }
 
-    public struct WEB_METADATA
+    public struct WEB_METADATA : IXMLItem
     {
         private IMediaElement host;
         private string url;
@@ -240,6 +227,7 @@ namespace BiblioTech
 
         public static class XmlKeys
         {
+            public static string XML_WebMetaData { get { return "webmetadata"; } }
             public static string XML_URL { get { return "url"; } }
             public static string XML_Website { get { return "website"; } }
             public static string XML_Genre { get { return "genre"; } }
@@ -261,7 +249,6 @@ namespace BiblioTech
         public XmlDocument ToXML()
         {
             XmlDocument document = new XmlDocument();
-            document.LoadXml("<root>");
 
             XmlElement URLElement = document.CreateElement(XmlKeys.XML_URL);
             XmlElement WebsiteElement = document.CreateElement(XmlKeys.XML_Website);
@@ -284,20 +271,21 @@ namespace BiblioTech
             return document;
         }
 
-        public bool SaveMetaData()
+        public bool Save(ref XmlDocument doc)
         {
-            try
+            XmlNode metaDataNode = doc.CreateNode(XmlKeys.XML_WebMetaData, "metadata", "");
+            XmlDocument metaDoc = ToXML();
+            foreach (var item in metaDoc.ChildNodes)
             {
-                XmlTextWriter writer = new XmlTextWriter(host.Title + "_MetaData.xml", null);
-                writer.Formatting = Formatting.Indented;
-                ToXML().Save(writer);
-                return true;
+                metaDataNode.AppendChild(item as XmlNode);
             }
-            catch (System.Exception exc)
-            {
-                System.Console.WriteLine(exc.Message);
-                return false;
-            }
+            doc.AppendChild(metaDataNode);
+            return true;
+        }
+
+        public bool Open(string xmlPath)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

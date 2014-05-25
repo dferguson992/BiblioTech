@@ -10,7 +10,7 @@
   <Class Name="BiblioTech.BiblioTechController" Collapsed="true">
     <Position X="9.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAABQAAAAAAIAAAAAAAAAAQAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <HashCode>AAAABQAAAgAAIAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>BiblioTechController.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -19,23 +19,6 @@
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
-    <NestedTypes>
-      <Class Name="BiblioTech.BiblioTechExceptions.BiblioTechUserAlertException" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>BiblioTechExceptions.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Class>
-      <Class Name="BiblioTech.BiblioTechExceptions.BiblioTechSystemAlertException" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>BiblioTechExceptions.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Class>
-      <Class Name="BiblioTech.BiblioTechExceptions.XMLWriteException" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>BiblioTechExceptions.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Class>
-    </NestedTypes>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>BiblioTechExceptions.cs</FileName>
@@ -52,7 +35,7 @@
   <Class Name="BiblioTech.CTagReaderWriter" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="9.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAQAAAAAAAAAAABAAAAAAAA=</HashCode>
       <FileName>CMediaController.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
@@ -68,7 +51,7 @@
   <Class Name="BiblioTech.CPrintMedia" Collapsed="true">
     <Position X="0.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAIAAAACgAAAAEAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAIAAAAAAAAAAAAIAAAACgAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>CPrintMedia.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -81,12 +64,13 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Struct Name="BiblioTech.BOOK_METADATA" Collapsed="true">
+  <Struct Name="BiblioTech.BOOK_METADATA" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="7.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEAEAAAABgAAAAIECAIAAAgCAQAAAAEAAAgAAAAAAAQ=</HashCode>
+      <HashCode>AEAEAIAABgAAIAIECAIAAAgCAQAAAAEAAAgAAAAAAAQ=</HashCode>
       <FileName>Structures_MetaData.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Struct>
   <Struct Name="BiblioTech.FILE_METADATA" Collapsed="true">
     <Position X="9.25" Y="2.75" Width="1.5" />
@@ -94,6 +78,7 @@
       <HashCode>AEAAgAAAAiAAAAIkCAIAAAgCAQAAAEEAAEhAAABAAIQ=</HashCode>
       <FileName>Structures_MetaData.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Struct>
   <Struct Name="BiblioTech.WEB_METADATA" Collapsed="true">
     <Position X="7.5" Y="3.75" Width="1.5" />
@@ -101,16 +86,17 @@
       <HashCode>AEAAAAAAAgAAgAIEAIIAAAACASAIAAEAAAgAAAAAAAQ=</HashCode>
       <FileName>Structures_MetaData.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Struct>
-  <Interface Name="BiblioTech.IXMLItem">
-    <Position X="2" Y="0.5" Width="1.5" />
+  <Interface Name="BiblioTech.IXMLItem" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="BiblioTech.IMediaElement">
-    <Position X="4.75" Y="0.5" Width="1.5" />
+    <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAEAAgAAAAAAAAAAAAEAAAAAAAAAAAAQ=</HashCode>
       <FileName>Interfaces.cs</FileName>
@@ -119,7 +105,7 @@
   <Interface Name="BiblioTech.IMediaTags" Collapsed="true">
     <Position X="7.5" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces.cs</FileName>
     </TypeIdentifier>
   </Interface>
@@ -130,7 +116,7 @@
       <FileName>Interfaces.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="BiblioTech.IFileMediaElement" Collapsed="true">
+  <Interface Name="BiblioTech.IFileMediaElement">
     <Position X="0.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>

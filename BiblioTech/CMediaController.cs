@@ -97,6 +97,8 @@ namespace BiblioTech
 
         public virtual bool Save(ref XmlDocument doc)
         {
+            doc.LoadXml("<root>");
+
             XmlNode titleNode = doc.CreateNode(XmlNodeType.Text, "title", "");
             XmlNode authorNode = doc.CreateNode(XmlNodeType.Text, "author", "");
             XmlNode tagsNode = doc.CreateNode(XmlNodeType.Text, "tags", "");
